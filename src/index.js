@@ -59,9 +59,13 @@ navigation[2].setAttribute("class", "italic");
 navigation[3].setAttribute("class", "italic");
 navigation[4].setAttribute("class", "italic");
 navigation[5].setAttribute("class", "italic");
-
+// 2. yol : navigation.className = "italic";
+//  navigation.textContent = siteContent.nav [`nav-item${index + 1 }`];
 const logo = document.getElementById("logo-img");
 logo.setAttribute("src", "http://localhost:9000/img/logo.png");
+
+// 2 . yol : document.getElementById("logo-img");
+// logo.setAttribute("src", "siteContent.images [logo-image]"); 
 
 const codeImg = document.getElementById("cta-img");
 codeImg.setAttribute("src", "http://localhost:9000/img/cta.png");
@@ -71,14 +75,14 @@ middleImg.setAttribute("src", "http://localhost:9000/img/accent.png");
 
 const sentenceBegin = document.querySelector(".cta-text h1");
 sentenceBegin.textContent = siteContent["cta"]["h1"];
-
+// document.getElementsByTagName = ("h1")[0].textContent = siteContent.cta.h1;
 const buttonBegin = document.querySelector(".cta-text button");
 buttonBegin.textContent = siteContent["cta"]["button"];
-
+// document.getElementsByTagName = (button)[0].textContent = siteContent.cta.button;
 const topContent = document.querySelectorAll(".top-content .text-content");
 topContent[0].querySelector("h4").textContent =
   siteContent["ana-içerik"]["özellikler-h4"];
-
+// document.querySelector("#cta-image").setAttribute("src", siteContent.images["cta-img"] );
 topContent[0].querySelector("p").textContent =
   siteContent["ana-içerik"]["özellikler-içerik"];
 
